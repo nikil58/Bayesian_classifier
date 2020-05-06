@@ -1,8 +1,5 @@
-﻿#Файлы кэша PyCharm
 .idea/
-env/
 __pycache__/
-#Базы данных спама
+env/
 test.csv
 test1.csv
-train.csv
