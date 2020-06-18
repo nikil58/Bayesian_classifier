@@ -47,7 +47,7 @@ def text(s):
     y = pd.get_dummies(df['number'])['spam']  # Шифрование надпими spam
     our = vectorizer.transform(test)  # Шифруем текст с произвольного файла, не составляем словарь
 
-    x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.33,
+    x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.26,
                                                         random_state=42)  # Разделяем выборку на тестовую и тенировочную
     clf = BernoulliNB()  # Создаем модель обучения
     clf.fit(x_train, y_train)  # Заполняем нашу модель тренировочными данными
